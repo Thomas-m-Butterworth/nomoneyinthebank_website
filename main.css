@@ -1,0 +1,320 @@
+.web_container{
+    width: 100%;
+    height: auto;
+}
+h1 {
+    color:black;
+    font-family: "brothers";
+    font-size: 50px;
+}
+
+h2 {
+    color:black;
+    font-family: "brothers";
+    font-size: 30px;
+    line-height: 80%;
+}
+
+h3 {
+        color: black;
+        font-family: "brothers";
+        font-size: 25px;
+        line-height: 80%;
+}
+
+p {
+    color: black;
+    font-family: "interstate";
+    font-size: 20px;
+
+}
+
+.hide {
+    display: none;
+  }
+
+.navbar_links {
+    display: flex;
+    width: 90%;
+    padding: 5px;
+}
+
+.navbar_icon {
+    width: 10%;
+    padding: 10px;
+}
+
+.navbar_links ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    float: left;
+    font-family: "brothers";
+    font-size: 20px;
+  }
+
+.navbar_links li{
+    float: left;
+    overflow: visible;
+}
+  
+.navbar_links li a {
+    display: block;
+    color: white;
+    text-align: center;
+    size: 20px;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+.navbar_links li a:hover {
+    color:indigo;
+  }
+
+  .navbar_links li {
+    display: block;
+    color: white;
+    text-align: center;
+    size: 20px;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  .navbar_links li p:hover {
+    color:indigo;
+  }
+
+  .banner_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    margin: auto;
+}
+
+.main_body {
+    width: 66%;
+    margin: auto;
+}
+.fighter_container {
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items:baseline;
+    justify-content: space-between;
+    margin:auto;
+    padding: 10px;
+    margin:auto;
+
+}
+/* 
+.fighter_container1 {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    justify-content: space-between;
+    padding: 10px;
+
+}
+.fighter_container2 {
+    width: 30%;
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    justify-content: space-between;
+    padding: 10px; 
+} */
+.fighter_text {
+    font-family: "puffin-arcade-chrome";
+    position: relative;
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 70%;
+    color: red;
+    text-shadow: 3px 3px yellow;
+}
+
+.fight_copy1 {
+    padding: 10px;
+    width: 30%;
+    background-color: floralwhite;
+    position: absolute;
+    text-align: center;
+    align-items: center;
+    z-index: 5;
+}
+
+.fight_copy2 {
+    padding: 10px;
+    background-color: floralwhite;
+    position: absolute;
+    margin-right: 5%;
+    text-align: center;
+    align-items: center;
+    z-index: 9;
+}
+
+.fighter {
+    max-height: 300px;
+    margin:auto;
+    position: relative;
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    -webkit-transition: .2s ease-in-out;
+     transition: .2s ease-in-out;
+        }
+
+    .fighter:hover {
+        -webkit-filter: blur(5px);
+         filter: blur(5px);
+         }
+    
+    .fighter:hover + .hide {
+        display: block;
+        }
+        
+
+
+.listing_reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+    width: 66%;
+    max-width: 960px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    margin: auto;
+}
+
+.listing {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 66%;
+    max-width: 960px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    margin: auto;
+}
+
+.listing_image {
+    float: left;
+    max-width: 310px;
+    max-height: 310px;
+    padding-right: 10px;
+    padding-top: 20px;
+}
+
+.listing_copy {
+    float: left;
+    width: 60%;
+    max-width: 600px;
+    padding-left: 15px;
+}
+
+#navbar {
+    display: flex;
+    position: sticky;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: fuchsia;
+    overflow: visible;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    z-index: 9;
+}
+div.sticky {
+        position: -webkit-sticky; /* Safari */
+        position: sticky;
+        top: 0;
+      }
+
+/* DROPDOWN MENU */
+.dropbtn {
+    color: white;
+    padding: 0;
+    border: none;
+    z-index: 10;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    float: left;
+    font-family: "brothers";
+    font-size: 20px;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: static;
+    padding-top: 60px;
+    min-width: 160px;
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color:darkviolet;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+    overflow: visible;
+  }
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {
+    color: darkviolet;
+    overflow: visible;
+  }
+
+
+.quote {
+    font-family: "brothers";
+    color: black;
+    font-size: 60px;
+}
+
+.promoter {
+    font-family: "interstate";
+    color:darkmagenta;
+    font-size: 40px;
+}
+
+#quotebox_left {
+    width: 960px;
+    line-height: 10%;
+    text-align: left;
+    margin: auto;
+    }
+
+#quotebox_right {
+    width: 960px;
+    line-height: 10%;
+    text-align: right;
+    margin: auto;
+    }
