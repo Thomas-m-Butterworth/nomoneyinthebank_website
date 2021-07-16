@@ -2,53 +2,72 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://use.typekit.net/zlz4rei.css">
     <link rel="stylesheet" type="text/css" href="main.css">
-    <title>Contact (No) Money in the Bank</title>
+    <title>(No) Money in the Bank</title>
 </head>
 <body>
-    <div class="navbar">
-        <a href="index.html"><img src="assets/logos/nmitb-logo.png" height="150px"></a>
-        <a href="blog.html">Blog</a>
-        <div class="dropdown_button">
-            <button class="dropbtn">Live Shows</button>
+       <!-- NAVIGATION BAR -->
+       <div id="navbar" class="sticky">
+        <div class="navbar_icon_social">
+            <div class="navbar_icon">
+                <a href="index.html"><img src="assets/logos/nmitb-logo.png" height="150px"></a>
+            </div>
+        <div class="social_nav">
+            <a href="https://www.facebook.com/nomonetinthebank/"><img src = "assets/logos/social/facebook_icon.png" alt = "Facebook Icon"></a>
+            <a href="https://www.twitter.com/nmitbank/"><img src = "assets/logos/social/twitter_icon.png" alt = "Twitter Icon"></a>
+            <a href="https://www.instagram.com/nmitabnk"><img src = "assets/logos/social/instagram_icon.png" alt = "Instagram Icon"></a>
+            <a href="https://ko-fi.com/nmitbank"><img src = "assets/support_us/kofi_icon.png" alt = "ko-fi Icon"></a>
         </div>
-        <div class="dropdown_content">
-            <a href="live_shows/valhalla.html">Valhalla of Decadence</a>
-            <a href="live_shows/psychocinematic.html">Psychocinematic</a>
-            <a href="live_shows/saddos.html">Wrestling with Saddos</a>
-            <a href="live_shows/tour.html">(No) Money in the Road</a>
-            <a href="live_shows/diary.html">Our Diary</a>
         </div>
-        <div class="dropdown_button">
-            <button class="dropbtn">Other Projects</button>
-        </div>
-        <div class="dropdown_content">
-            <a href="other/drivethru.html">An Order at Drive-Thru Records</a>
-            <a href="other/zines.html">Zines & Comics</a>
-            <a href="other/sdw.html">Social Distance Warriors</a>
-        </div>
-        <a href="press.html">Press</a>
-        <a href="support_us.html">Support Us</a>
-        <a href="contact.html">Contact Us</a>
-        <form action="https://socialdistancewarriors.co.uk" method="get" target="_blank">
-            <button type="submit">Social Distance Warriors</button>
-         </form>
+    <div class="navbar_links">
+    <ul class="navbar_links">
+        <li> <a href="blog.html">Blog</a></li>         
+        <li class="dropdown">
+            <a href="#" class="dropbtn">Other Projects</button>
+            <div class="dropdown-content">
+                  <a href="other/drivethru.html" >An Order at Drive-Thru Records</a>
+                  <a href="other/zines.html">Zines & Comics</a>
+            </div>
+            </li>
+        <li><a href="press.html">Press</a></li>
+        <li><a href="support_us.html">Support Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="https://socialdistancewarriors.co.uk" target="_blank">Social Distance Warriors</a></li>
+        <li class="dropdown">
+            <a href="#" class="dropbtn">Live Shows</button>
+            <div class="dropdown-content">
+                <a href="live_shows/valhalla.html">Valhalla of Decadence</a>
+                <a href="live_shows/psychocinematic.html">Psychocinematic</a>
+                <a href="live_shows/saddos.html">Wrestling with Saddos</a>
+                <a href="live_shows/tour.html">(No) Money in the Road</a>
+                <a href="live_shows/diary.html">Our Diary</a>
+           </div>
+           </li>
+    </ul>
+    </div>    
     </div>
+    <!-- NAVBAR END -->
 
-    <div class="container">
-        <form action="action_page.php">
-            <label for="fname">First Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    <div class="main_body">
+        <div class="container">
+        <h1>Contact Us</h1>
+        <form method="post" action="sendemail.php">
+            <label class="form_label" for="fname"> Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name..">
       
-            <label for="lname">Last Name</label>
-            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            <label class = "form_label" for="email">email</label>
+            <input type="text" id="email" name="lastname" placeholder="Your email...">
 
-            <label for="subject">Subject</label>
+            <label class = "form_label" for="subject">Subject</label>
             <input type="text" id="subject" name="subject" placeholder="The subject of your email...">
       
-            <label for="message">Message</label>
+            <label class = "form_label" for="message">Message</label>
             <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
-        <input type="submit" value="Submit">
+        
+            <input class="form_label" type="submit" value="Submit">
         </form>
-      </div>
+    </div>
+    </div>
+</body>
 </html>

@@ -1,18 +1,60 @@
 .web_container{
-    width: 100%;
+    width: 100vw;
     height: auto;
 }
+
+/* CONTACT FORM */
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  font-family: "interstate";
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: rgba(255, 0, 255, 0.5);
+  color:black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  color: darkmagenta;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.form_label {
+    font-family: "brothers";
+    color: black;
+    font-size: 15;
+}
+
 h1 {
     color:black;
     font-family: "brothers";
-    font-size: 50px;
+    font-size: 5vh;
+    line-height: 3.5vh;
 }
 
 h2 {
     color:black;
     font-family: "brothers";
-    font-size: 30px;
-    line-height: 80%;
+    font-size: 4vh;
+    line-height: 3vh;
 }
 
 h3 {
@@ -22,10 +64,17 @@ h3 {
         line-height: 80%;
 }
 
+em {
+    font-family: "brothers";
+    color:darkmagenta; 
+}
+
 p {
     color: black;
     font-family: "interstate";
     font-size: 20px;
+    margin:0;
+    padding-top: 10px;
 
 }
 
@@ -35,13 +84,39 @@ p {
 
 .navbar_links {
     display: flex;
-    width: 90%;
+    width: 90vw;
     padding: 5px;
 }
 
+.navbar_icon_social {
+    display: flex;
+    flex-direction: column;
+    width: 10vw;  
+}
+
 .navbar_icon {
-    width: 10%;
-    padding: 10px;
+    margin: 0;
+    width: 12.5vw;
+}
+
+.navbar_icon img {
+    width: 11vw;
+    height: auto;
+}
+
+.social_nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 0;
+    padding: 1vw;
+    margin:0;
+}
+
+.social_nav img{
+    width: 1.75vw;
+    background: white;
+    border-radius: 360px;
 }
 
 .navbar_links ul {
@@ -51,7 +126,8 @@ p {
     overflow: hidden;
     float: left;
     font-family: "brothers";
-    font-size: 20px;
+    font-size: 3vh;
+    padding:0;
   }
 
 .navbar_links li{
@@ -63,8 +139,8 @@ p {
     display: block;
     color: white;
     text-align: center;
-    size: 20px;
-    padding: 14px 16px;
+    font-size: 3vh;
+    padding: 1vw;
     text-decoration: none;
   }
   
@@ -76,8 +152,8 @@ p {
     display: block;
     color: white;
     text-align: center;
-    size: 20px;
-    padding: 14px 16px;
+    font-size: 3vh;
+    padding: 1vw;
     text-decoration: none;
   }
 
@@ -90,23 +166,29 @@ p {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 90%;
+    width: 90vw;
     padding-bottom: 15px;
     padding-top: 15px;
     margin: auto;
 }
 
+.banner_container img {
+    width: 75vw;
+    height:auto;
+}
+
 .main_body {
-    width: 66%;
+    width: 66vw;
+    padding-bottom: 20px;
     margin: auto;
 }
 .fighter_container {
-    width: 75%;
+    width: 75vw;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     align-items:baseline;
-    justify-content: space-between;
+    justify-content: center;
     margin:auto;
     padding: 10px;
     margin:auto;
@@ -135,7 +217,9 @@ p {
     font-family: "puffin-arcade-chrome";
     position: relative;
     font-weight: 800;
-    font-size: 60px;
+    margin: auto;
+    text-align: center;
+    font-size: 90px;
     line-height: 70%;
     color: red;
     text-shadow: 3px 3px yellow;
@@ -143,8 +227,9 @@ p {
 
 .fight_copy1 {
     padding: 10px;
-    width: 30%;
-    background-color: floralwhite;
+    width: 500px;
+    border-radius: 25px;
+    background: fuchsia;
     position: absolute;
     text-align: center;
     align-items: center;
@@ -153,8 +238,10 @@ p {
 
 .fight_copy2 {
     padding: 10px;
-    background-color: floralwhite;
+    width: 500px;
     position: absolute;
+    border-radius: 25px;
+    background: fuchsia;
     margin-right: 5%;
     text-align: center;
     align-items: center;
@@ -163,6 +250,7 @@ p {
 
 .fighter {
     max-height: 300px;
+    padding: 30px;
     margin:auto;
     position: relative;
     -webkit-filter: blur(0);
@@ -188,7 +276,7 @@ p {
     justify-content: center;
     align-items: center;
     text-align: right;
-    width: 66%;
+    width: 66vw;
     max-width: 960px;
     padding-bottom: 15px;
     padding-top: 15px;
@@ -200,7 +288,7 @@ p {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 66%;
+    width: 66vw;
     max-width: 960px;
     padding-bottom: 15px;
     padding-top: 15px;
@@ -215,11 +303,52 @@ p {
     padding-top: 20px;
 }
 
-.listing_copy {
+.zine_reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: right;
+    width: 75vw;
+    max-width: 960px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    margin: auto;
+}
+
+.zine {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 75vw;
+    max-width: 960px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    margin: auto;
+}
+
+.zine_image {
     float: left;
-    width: 60%;
+    max-width: 40vw;
+    max-height: 40vh;
+    padding-right: 10px;
+    padding-top: 20px;
+}
+
+.zine_copy {
+    float: left;
+    width: 60vw;
     max-width: 600px;
     padding-left: 15px;
+}
+
+.zine_copy h1, h2, h3, h4 {
+    margin: 5px;
+}
+
+.zine_copy h3 {
+    color:darkviolet;
 }
 
 #navbar {
@@ -228,13 +357,12 @@ p {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
+    width: 98vw;
+    height: auto;
     background-color: fuchsia;
-    overflow: visible;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    overflow: hidden;
+    padding-left: 0;
+    padding-bottom: 1.5vh;
     z-index: 9;
 }
 div.sticky {
@@ -248,13 +376,14 @@ div.sticky {
     color: white;
     padding: 0;
     border: none;
+    text-align: center;
     z-index: 10;
     cursor: pointer;
     margin: 0;
     padding: 0;
     float: left;
     font-family: "brothers";
-    font-size: 20px;
+    font-size: 3vh;
   }
   
   /* The container <div> - needed to position the dropdown content */
@@ -266,10 +395,11 @@ div.sticky {
   /* Dropdown Content (Hidden by Default) */
   .dropdown-content {
     display: none;
-    position: static;
+    position: relative;
     padding-top: 60px;
-    min-width: 160px;
+    min-width: 10vw;
     z-index: 1;
+    overflow:hidden;
   }
   
   /* Links inside the dropdown */
@@ -283,7 +413,7 @@ div.sticky {
   /* Show the dropdown menu on hover */
   .dropdown:hover .dropdown-content {
     display: block;
-    overflow: visible;
+    overflow:visible;
   }
   
   /* Change the background color of the dropdown button when the dropdown content is shown */
@@ -296,25 +426,192 @@ div.sticky {
 .quote {
     font-family: "brothers";
     color: black;
-    font-size: 60px;
+    font-size: 5vh;
+    line-height: 4vh;
+    padding: 5px;
 }
 
 .promoter {
     font-family: "interstate";
     color:darkmagenta;
-    font-size: 40px;
+    font-size: 3.5vh;
+    line-height: 3vh;
+    padding: 1vh;
 }
 
 #quotebox_left {
-    width: 960px;
     line-height: 10%;
     text-align: left;
-    margin: auto;
+    padding-left: 0in;
+    padding: 10px;
     }
 
 #quotebox_right {
-    width: 960px;
     line-height: 10%;
     text-align: right;
-    margin: auto;
+    padding-right: 0;
+    padding: 10px;
     }
+
+/* <-- adapative gallery --> */
+.gallery_container {
+  width: 70%;
+  background-image: url("assets/logos/pattern_bg_tile.png");
+  margin: auto;
+}
+
+.gallery_container ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding:0;
+}
+
+.gallery_container li {
+  height: 25vh;
+  flex-grow: 1;
+}
+
+.gallery_container li:last-child {
+  /* // There's no science in using "10" here. In all my testing, this delivered the best results. */
+  flex-grow: 10;
+}
+
+.gallery_container img {
+  max-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  vertical-align: bottom;
+}
+
+/* // ADVANCED */
+
+/* // Portrait */
+
+@media (max-aspect-ratio: 1/1) {
+.gallery_container  li {
+    height: 30vh;
+  }
+}
+
+/* // Short screens */
+
+@media (max-height: 480px) {
+.gallery_container  li {
+    height: 80vh;
+  }
+}
+
+/* // Smaller screens in portrait */
+
+@media (max-aspect-ratio: 1/1) and (max-width: 480px) {
+  ul {
+    flex-direction: row;
+  }
+
+.gallery_container  li {
+    height: auto;
+    width: 100%;
+  }
+.gallery_container  img {
+    width: 100%;
+    max-height: 75vh;
+    min-width: 0;
+  }
+}
+
+/* PRESS */
+#press_container {
+    width: 85vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin:auto;
+}
+
+.quotes_cont {
+    display: flex;
+    min-width: 45vw;
+    flex-direction: column;
+    flex-grow: 4;
+}
+
+.quotes_cont h2 {
+    text-align: center;
+}
+
+.bio_cont {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    text-align: center;
+}
+
+.epk_cont {
+    max-width:22vw;  
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.epk_cont img{
+    max-width: 8vw;
+    max-height: auto;
+
+}
+
+.epk_cont img:hover{
+    border:rgba(46, 23, 46, 0.5) solid 3px;
+    border-radius: 300px;
+}
+
+.support_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+}
+
+/* BOUNCE ANIMATION IN SUPPORT */
+@keyframes bounce {
+	0%, 100%, 20%, 50%, 80% {
+		-webkit-transform: translateY(0);
+		-ms-transform:     translateY(0);
+		transform:         translateY(0)
+	}
+	40% {
+		-webkit-transform: translateY(-30px);
+		-ms-transform:     translateY(-30px);
+		transform:         translateY(-30px)
+	}
+	60% {
+		-webkit-transform: translateY(-15px);
+		-ms-transform:     translateY(-15px);
+		transform:         translateY(-15px)
+	}
+}
+
+.support_container a{
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+}
+
+.support_container a:hover{
+    border:3px solid darkmagenta;
+    background: url("assets/logos/pattern_bg_tile.png");
+    border-radius: 300px;
+    cursor: pointer;
+    animation-name: bounce;
+    -moz-animation-name: bounce;
+}
+
+.support_icon {
+    width:150px;
+    padding: 20px;
+}
