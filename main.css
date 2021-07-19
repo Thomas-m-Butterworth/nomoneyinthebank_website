@@ -253,6 +253,15 @@ text {
     z-index: 9;
 }
 
+#fighter_text {
+    font-family:"puffin-arcade-chrome";
+    font-size: 10vh;
+    color: red;
+    text-shadow: yellow 2px 2px;
+    text-align: center;
+
+}
+
 .fighter {
     max-height: 300px;
     padding: 30px;
